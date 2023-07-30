@@ -1,3 +1,4 @@
+import "./styles.css";
 import { ChangeEvent, FormEvent, useState } from "react";
 
 type TSearch = {
@@ -16,10 +17,14 @@ export const SearchComponent = ({ onSubmit }: TSearch): JSX.Element => {
     setSearch(e.target.value);
   };
   return (
-    <div>
+    <div className="search-bar">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="search">Search image</label>
-        <input id="search" value={search} onChange={handleInput} />
+        <input
+          className="search-input"
+          value={search}
+          onChange={handleInput}
+          placeholder="Pesquisar..."
+        />
       </form>
     </div>
   );

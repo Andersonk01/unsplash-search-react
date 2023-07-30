@@ -1,3 +1,4 @@
+import "./styles.css";
 import { UnsplashImage } from "../../api";
 
 interface ImageShowProps {
@@ -10,8 +11,12 @@ interface ImageListProps {
 
 const ImageShow = ({ image }: ImageShowProps): JSX.Element => {
   return (
-    <div>
-      <img src={image.urls.small} alt={image.alt_description} />
+    <div className="container-image">
+      <img
+        className="image"
+        src={image.urls.small}
+        alt={image.alt_description}
+      />
     </div>
   );
 };
@@ -21,5 +26,5 @@ export const ImageList = ({ images }: ImageListProps): JSX.Element => {
     return <ImageShow key={img.id} image={img}></ImageShow>;
   });
 
-  return <div>{renderImg}</div>;
+  return <div className="main-image">{renderImg}</div>;
 };

@@ -1,4 +1,3 @@
-import "./App.css";
 import { SearchComponent } from "./components/Search";
 
 import { useState } from "react";
@@ -15,10 +14,10 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <SearchComponent onSubmit={handleSubmit} />
       <ImageList images={images} />
-    </div>
+    </>
   );
 }
 

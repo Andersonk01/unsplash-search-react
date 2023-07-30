@@ -1,5 +1,7 @@
 # Projeto de Estudo: Requisições com TypeScript
 
+![Layout](/public/app.png)
+
 Este é um projeto simples criado com o intuito de estudar requisições HTTP e TypeScript. O projeto utiliza a API do Unsplash para buscar e exibir imagens com base no termo de busca fornecido pelo usuário. Foi desenvolvido utilizando React com TypeScript, focando em conceitos fundamentais de requisições web e tipos estáticos.
 
 ## Funcionalidades
