@@ -23,7 +23,7 @@ export const SearchComponent = ({ onSubmit }: TSearch): JSX.Element => {
           className="search-input"
           value={search}
           onChange={handleInput}
-          placeholder="Pesquisar imagens...press Enter"
+          placeholder="Pesquisar imagens...Enter"
         />
       </form>
     </div>
